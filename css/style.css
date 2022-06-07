@@ -1,0 +1,6 @@
+/* global */
+@import '/css/global/global.css';
+@import '/css/global/cores.css';
+
+/* header */
+@import '/css/header/header.css';
