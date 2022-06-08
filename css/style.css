@@ -3,6 +3,6 @@
 @import '/css/global/cores.css';
 
 /* pag 1 */
-@import '/css/pag-1/header.css';
-@import '/css/pag-1/slide.css';
-@import '/css/pag-1/footer.css';
+@import '/css/home/header.css';
+@import '/css/home/slide.css';
+@import '/css/home/footer.css';
