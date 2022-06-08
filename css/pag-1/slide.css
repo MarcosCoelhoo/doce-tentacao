@@ -21,3 +21,15 @@
 .slide-container img.active {
   opacity: 1;
 }
+
+@media (max-width: 800px) {
+  .slide {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide {
+    height: 40vh;
+  }
+}

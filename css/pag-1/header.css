@@ -20,7 +20,7 @@
 }
 
 .header-content a:nth-child(-n+2) {
-  color: var(--b-01);
+  color: var(--m-01);
   position: relative;
   font-weight: 700;
 }
@@ -44,4 +44,14 @@
   padding: 10px;
   color: var(--b-07);
   border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .header-content a:nth-child(-n+2) {
+    display: none;
+  }
+
+  .header-bg {
+    padding: 10px;
+  }
 }
