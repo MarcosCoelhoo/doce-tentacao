@@ -2,5 +2,6 @@
 @import '/css/global/global.css';
 @import '/css/global/cores.css';
 
-/* header */
-@import '/css/header/header.css';
+/* pag 1 */
+@import '/css/pag-1/header.css';
+@import '/css/pag-1/slide.css';

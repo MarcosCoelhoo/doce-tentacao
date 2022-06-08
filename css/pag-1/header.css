@@ -22,6 +22,7 @@
 .header-content a:nth-child(-n+2) {
   color: var(--b-01);
   position: relative;
+  font-weight: 700;
 }
 
 .header-content a:nth-child(-n+2):after {
