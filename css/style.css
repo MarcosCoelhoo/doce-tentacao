@@ -2,7 +2,11 @@
 @import '/css/global/global.css';
 @import '/css/global/cores.css';
 
-/* pag 1 */
+/* home */
 @import '/css/home/header.css';
 @import '/css/home/slide.css';
 @import '/css/home/footer.css';
+
+/* ementa */
+@import '/css/ementa/options.css';
+@import '/css/ementa/ementa.css';

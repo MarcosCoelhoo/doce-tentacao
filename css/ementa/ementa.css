@@ -1,0 +1,63 @@
+.ementa-bg {
+  background: var(--b-07);
+  padding: 20px 60px;
+}
+
+.ementa {
+  background: var(--m-01);
+  padding: 20px 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 5px;
+  display: none;
+  animation: slide .3s forwards;
+}
+
+.ementa.active {
+  display: block;
+}
+
+.ementa h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--b-09);
+  font-family: 'poppins';
+}
+
+.ementa li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: Roboto;
+  color: var(--b-07);
+}
+
+
+.ementa li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px,0,0)
+  } 
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0)
+  }
+}
+
+@media (max-width: 800px) {
+  .ementa {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ementa {
+    margin-left: -35px;
+    margin-right: -35px;
+  }
+}
