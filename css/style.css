@@ -10,3 +10,7 @@
 /* ementa */
 @import '/css/ementa/options.css';
 @import '/css/ementa/ementa.css';
+
+/* conheca-nos */
+@import '/css/conheca-nos/equipe.css';
+@import '/css/conheca-nos/endereco.css';

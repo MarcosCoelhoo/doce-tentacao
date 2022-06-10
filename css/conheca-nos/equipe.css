@@ -1,0 +1,112 @@
+.conheca {
+  padding: 45px 60px;
+}
+
+.conheca .title {
+  font-family: Poppins;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: var(--b-02);
+}
+
+.conheca .title::before {
+  content: "";
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+  background: var(--m-03);
+  margin-right: 20px;
+}
+
+.funcionarios {
+  display: flex;
+  gap: 4rem;
+  margin-left: 90px;
+  margin-bottom: 100px;
+}
+
+.funcionarios li {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  background: var(--m-09);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.funcionarios li .funcionario-image {
+  height: 120px;
+  border-radius: 5px 5px 0 0;
+  background: rgb(151, 150, 150);
+}
+
+.funcionarios li .funcionario-cargo {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: "Josefin sans";
+}
+
+.funcionarios li .funcionario-nome {
+  margin-left: 20px;
+  margin-top: -5px;
+  font-size: 1.8rem;
+  font-family: Poppins;
+  color: var(--b-03);
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .funcionarios {
+    margin-left: 50px;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .funcionarios li .funcionario-nome {
+    font-size: 1.4rem;
+  }
+
+  .funcionarios li .funcionario-cargo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .conheca .title {
+    font-size: 2.3rem;
+  }
+
+  .conheca .title::before {
+    width: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .conheca .title {
+    font-size: 2rem;
+  }
+
+  .conheca .title::before {
+    width: 60px;
+    height: 15px;
+  }
+
+  .funcionarios {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .funcionarios {
+    margin-left: 0;
+  }
+
+  .conheca .title::before {
+    width: 40px;
+  }
+
+  .funcionarios li {
+    width: 270px;
+  }
+}
