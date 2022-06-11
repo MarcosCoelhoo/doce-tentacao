@@ -4,9 +4,9 @@
 }
 
 .footer {
-  display: grid;
+  display: flex;
   margin: 0 auto;
-  grid-template-columns: auto 1fr;
+  /* grid-template-columns: auto 1fr; */
   gap: 100px;
 }
 
@@ -14,6 +14,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 150px;
+}
+
+.informacao {
+  padding: 45px 60px;
 }
 
 .footer-content h1 {
