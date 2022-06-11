@@ -14,3 +14,6 @@
 /* conheca-nos */
 @import '/css/conheca-nos/equipe.css';
 @import '/css/conheca-nos/endereco.css';
+
+/* contato */
+@import '/css/contato/contato.css';

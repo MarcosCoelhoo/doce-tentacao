@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
     rel="stylesheet">
-  <title>Doce Tentação | Conheça-nos</title>
+  <title>Doce Tentação | Contato</title>
 </head>
 
 <body>
@@ -30,32 +30,32 @@
     </section>
   </header>
 
-  <section class="conheca">
-    <h2 class="title">Nossa equipe</h2>
-    <ul class="funcionarios">
-      <li>
-        <div class="funcionario-image">
-
-        </div>
-        <p class="funcionario-cargo">gerente</p>
-        <p class="funcionario-nome">Sergio Martins</p>
-      </li>
-      <li>
-        <div class="funcionario-image">
-
-        </div>
-        <p class="funcionario-cargo">emp. balcão/mesa</p>
-        <p class="funcionario-nome">Delia Fazacas</p>
-      </li>
-    </ul>
-    <h2 class="title">Venha até nós</h2>
-    <section class="endereco">
-      <div class="endereco-mapa">
-        <img src="imgs/conheca-nos/mapa.png" alt="">
+  <section class="contato">
+    <h2 class="contato title">Entre em contato</h2>
+    <form action="post" class="contato-form">
+      <div class="input-area">
+        <label for="nome">Seu nome</label>
+        <input type="text" name="nome" id="nome">
       </div>
-      <p class="endereco-cidade">cidade tal</p>
-      <p class="endereco-rua ">Rua aqui mesmo, 999</p>
-    </section>
+      <div class="input-area">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="seuemail@gmail.com">
+      </div>
+      <div class="input-area">
+        <label for="cidade">Cidade</label>
+        <input type="text" name="cidade" id="cidade">
+      </div>
+
+      <div class="input-area">
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone" placeholder="+99 9999-9999">
+      </div>
+
+      <div class="input-area">
+        <textarea name="mensagem" id="mensagem" cols="40" rows="5" placeholder="Deixe sua opinião..."></textarea>
+      </div>
+      <button class="contato-btn">ENVIAR</button>
+    </form>
   </section>
 
   <footer class="footer-bg">

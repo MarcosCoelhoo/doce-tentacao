@@ -1,6 +1,6 @@
 let timer = 3000,
     currentImageIndex = 0,
-    images = document.querySelectorAll('.slide-container img'),
+    images = document.querySelectorAll('.slide-container li'),
     max = images.length;
 
 function slider() {
