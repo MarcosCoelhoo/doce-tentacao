@@ -1,0 +1,124 @@
+.header-bg {
+  background: var(--b-04);
+  padding: 10px 60px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+.menu li a {
+  color: var(--b-01);
+}
+
+.menu li a:hover {
+  color: var(--b-02);
+}
+
+.menu li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: var(--b-01);
+  transition: 0.3s;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+.header-content .btn-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header-bg {
+    padding: 10px 20px;
+  }
+
+  .header-content .menu {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 10px 20px;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    background: var(--b-04);
+    visibility: hidden;
+    transition: 0.6s;
+    overflow-y: hidden;
+    z-index: 5;
+  }
+
+  .header-content.active .menu {
+    height: calc(100vh - 110px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .header-content .btn-menu {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 8px 16px;
+    gap: 10px;
+    font-size: 1.3rem;
+  }
+
+  .header-content .btn-menu .hamburger {
+    border-top: 2px solid black;
+    width: 20px;
+    position: relative;
+  }
+
+  .header-content .btn-menu .hamburger::after,
+  .header-content .btn-menu .hamburger::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+
+  .header-content.active .btn-menu .hamburger {
+    border-top-color: transparent;
+  }
+
+  .header-content.active .btn-menu .hamburger::before {
+    transform: rotate(-135deg);
+    position: absolute;
+    top: -7px;
+  }
+
+  .header-content.active .btn-menu .hamburger::after {
+    transform: rotate(135deg);
+    position: absolute;
+    top: -7px;
+  }
+  .header-content .menu li {
+    margin: 0px 10px 20px 20px;
+    border-bottom: 2px solid var(--b-03);
+  }
+
+  .menu li a::after {
+    display: none;
+  }
+}

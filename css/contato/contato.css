@@ -1,9 +1,9 @@
-.contato {
+#contato .contato {
   padding: 45px 60px;
 }
 
 .contato .title {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 2.6rem;
   display: flex;
   align-items: center;
@@ -85,12 +85,12 @@
   background: #fff;
   border-radius: 20px;
   border: 2px solid #fff;
-  transition: .3s;
-  }
+  transition: 0.3s;
+}
 
-  .contato-btn:hover {
-    background: var(--b-05);
-  }
+.contato-btn:hover {
+  background: var(--b-05);
+}
 
 @media (max-width: 800px) {
   .contato-form {
@@ -148,7 +148,6 @@
 
   .contato-form .input-area textarea {
     margin-left: 40px;
-    
   }
 
   .contato-btn {
