@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&family=Merriweather:ital,wght@0,400;1,400;1,700&display=swap"
     rel="stylesheet">
   <title>Doce Tentação | Contato</title>
 </head>
@@ -19,7 +19,7 @@
 <body id="contato">
   <header class="header-bg">
     <section class="header-container">
-      <a href="index.html" class="header-image">
+      <a href="home.html" class="header-image">
         <img src="imgs/logos-e-slides/logo-white.png" alt="logo doce tentação" width="123" height="90">
       </a>
       <nav class="header-content">
@@ -27,7 +27,7 @@
           <span class="hamburger"></span>
         </button>
         <ul class="menu">
-          <li><a href="conheca-nos.html">Conheça-nos</a></li>
+          <li><a href="conheca-nos.html">Doce Tentação</a></li>
           <li><a href="contato.html">Contacto</a></li>
           <li><a href="ementa.html">Nossa Ementa</a></li>
         </ul>
@@ -44,29 +44,40 @@
 
   <section class="contato">
     <h2 class="contato title">Entre em contato</h2>
-    <form action="post" class="contato-form">
-      <div class="input-area">
+    <section class="contato-dados">
+      <div class="contato-email">
+        <p>docetentacao@gmail.com</p>
+      </div>
+      <div class="contato-endereco">
+        <p>Cidade tal</p>
+        <p>Bairro tal, rua tal, 000</p>
+      </div>
+      <div class="contato-redes">
+        <a href="#">Doce Tentação</a>
+        <a href="#">@docetentacao</a>
+        <a href="#">youtube.com/docetentacao </a>
+      </div>
+    </section>
+
+    <form class="form" action="">
+      <div class="input-box">
         <label for="nome">Seu nome</label>
         <input type="text" name="nome" id="nome">
       </div>
-      <div class="input-area">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="seuemail@gmail.com">
-      </div>
-      <div class="input-area">
+      <div class="input-box">
         <label for="cidade">Cidade</label>
         <input type="text" name="cidade" id="cidade">
       </div>
-
-      <div class="input-area">
+      <div class="input-box">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+      </div>
+      <div class="input-box">
         <label for="telefone">Telefone</label>
         <input type="text" name="telefone" id="telefone" placeholder="+99 9999-9999">
       </div>
-
-      <div class="input-area">
-        <textarea name="mensagem" id="mensagem" cols="40" rows="5" placeholder="Deixe sua opinião..."></textarea>
-      </div>
-      <button class="contato-btn">ENVIAR</button>
+      <textarea class="input-mensagem" name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+      <button class="input-btn" type="submit">Enviar</button>
     </form>
   </section>
 
@@ -76,7 +87,7 @@
         <img src="imgs/logos-e-slides/logo-transparente.png" alt="Logo Doce Tentação">
       </div>
       <div class="informacao">
-        <h2>Informações</h2>
+        <h2>Mapa</h2>
         <a href="conheca-nos.html">Conheça-nos</a>
         <a href="contato.html">Contacto</a>
         <a href="ementa.html">Nossa Ementa</a>
@@ -87,15 +98,15 @@
         <a href="#">Chat</a>
       </div>
       <div class="social">
-        <img src="imgs/icones/instagram.svg" alt="logo instagram" width="32" height="32">
-        <img src="imgs/icones/facebook.svg" alt="logo facebook" width="32" height="32">
-        <img src="imgs/icones/whatsapp.svg" alt="logo whatsapp" width="32" height="32">
+        <a href="#"><img src="imgs/icones/instagram.svg" alt="logo instagram" width="32" height="32"></a>
+        <a href="#"><img src="imgs/icones/facebook.svg" alt="logo facebook" width="32" height="32"></a>
+        <a href="#"><img src="imgs/icones/youtube.svg" alt="logo youtube" width="32" height="32"></a>
       </div>
     </div>
   </footer>
 
-  
-  <script src="/css/home/home.js"></script>
+
+  <script src="/css/componentes/menu.js"></script>
 </body>
 
 </html>

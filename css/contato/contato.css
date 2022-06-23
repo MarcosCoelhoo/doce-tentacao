@@ -20,137 +20,142 @@
   margin-right: 20px;
 }
 
-.contato-form {
+.contato-dados {
+  background: #bc7127;
   max-width: 700px;
-  margin-left: 90px;
-  padding: 20px 30px;
-  background: #fff;
-  box-shadow: inset 210px 0 var(--b-04);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.contato-form .input-area {
-  position: relative;
-}
-
-.contato-form .input-area:not(:last-child) {
-  margin-bottom: 30px;
-  height: 40px;
-}
-
-.contato-form .input-area input {
-  position: absolute;
-  height: 30px;
-  width: 260px;
-  outline: none;
-  padding: 2px 5px;
-  left: 240px;
+  font-family: "Roboto", san-serif;
   font-size: 1rem;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
 }
 
-.contato-form .input-area input:focus {
-  border: 2px solid var(--b-04);
-  border-radius: 3px;
+.contato-email::before,
+.contato-endereco::before,
+.contato-redes::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.contato-form .input-area textarea {
-  margin-left: 240px;
-  outline: none;
-  padding: 2px 5px;
-  font-size: 1rem;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
+.contato-endereco p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
-.contato-form .input-area textarea:focus {
-  border: 2px solid var(--b-04);
-  border-radius: 3px;
-}
-
-.contato-form .input-area label {
-  font-size: 1.3rem;
-  text-align: right;
-  font-family: Poppins;
-  font-weight: 500;
+.contato-redes a {
   color: #fff;
 }
 
-.contato-btn {
-  width: 150px;
-  height: 40px;
-  outline: none;
+.contato-redes a:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contato-email::before {
+  background: url("/imgs/icones/email.svg") no-repeat;
+}
+
+.contato-endereco::before {
+  background: url("/imgs/icones/mapa.svg") no-repeat;
+}
+
+.contato-redes::before {
+  background: url("/imgs/icones/social.svg") no-repeat;
+}
+
+.form {
   background: #fff;
-  border-radius: 20px;
-  border: 2px solid #fff;
-  transition: 0.3s;
+  max-width: 800px;
+  padding: 20px;
+  display: grid;
+  gap: 20px 10px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.contato-btn:hover {
-  background: var(--b-05);
+.form .input-box {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (max-width: 800px) {
-  .contato-form {
-    margin-left: 0;
-  }
-  .contato-form .input-area input {
-    width: 200px;
-    left: 200px;
-  }
-
-  .contato-form .input-area textarea {
-    margin-left: 200px;
-    width: 200px;
-  }
+.form .input-box input {
+  height: 30px;
+  font-size: 1.1rem;
+  background: #d9d9d9;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
 }
 
-@media (max-width: 600px) {
-  .contato {
-    padding: 20px;
+.form .input-box label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--b-04);
+}
+
+.form .input-mensagem {
+  display: block;
+  width: 490px;
+  grid-column: 1/-1;
+  background: #d9d9d9;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.form .input-btn {
+  display: block;
+  width: 130px;
+  height: 40px;
+  background: #FBB52C;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--b-01);
+}
+
+.form .input-btn:hover {
+  background: #E89B03;
+}
+
+@media (max-width:700px ) {
+  #contato .contato {
+    padding: 35px 20px;
   }
 
   .contato .title {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
-
   .contato .title::before {
-    width: 60px;
+    width: 50px;
+    height: 20px;
+  }
+  .form .input-box {
+    grid-column: 1/-1;
+    width: 400px;
   }
 
-  .contato-form {
-    box-shadow: inset 180px 0 var(--b-04);
-  }
-
-  .contato-form .input-area input {
-    width: 170px;
+  .form .input-mensagem {
+    width: 400px;
   }
 }
 
-@media (max-width: 500px) {
-  .contato-form .input-area label {
-    color: var(--b-04);
+@media (max-width:500px ) {
+  .form .input-box {
+    width: 250px;
   }
-
-  .contato-form {
-    box-shadow: inset 0 -180px var(--b-04);
-  }
-  .contato-form .input-area:not(:last-child) {
-    margin-bottom: 50px;
-  }
-
-  .contato-form .input-area input {
-    top: 40px;
-    left: 40px;
-  }
-
-  .contato-form .input-area textarea {
-    margin-left: 40px;
-  }
-
-  .contato-btn {
-    margin-top: 40px;
+  .form .input-mensagem {
+    width: 250px;
   }
 }

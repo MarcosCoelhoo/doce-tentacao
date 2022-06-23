@@ -1,7 +1,6 @@
 .header-bg {
   background: var(--b-04);
-  padding: 10px 60px;
-  font-family: "Josefin Sans", sans-serif;
+  padding: 10px 50px;
 }
 
 .header-container {
@@ -15,17 +14,26 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  box-sizing: border-box;
+  
 }
 
 .menu li a {
   color: var(--b-01);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.menu li a:hover {
-  color: var(--b-02);
+.menu li:nth-child(n+2) a:before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  left: -10px;
+  background: var(--b-03);
+  display: inline-block;
+  position: absolute;
 }
 
 .menu li a::after {
@@ -63,6 +71,10 @@
     transition: 0.6s;
     overflow-y: hidden;
     z-index: 5;
+  }
+
+  .menu li:nth-child(n+2) a:before {
+    display: none;
   }
 
   .header-content.active .menu {

@@ -3,7 +3,7 @@
 }
 
 .ementa {
-  background: var(--m-01);
+  background: var(--b-04);
   padding: 20px 40px;
   margin-left: 100px;
   margin-right: 100px;
@@ -19,7 +19,7 @@
 .ementa h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: var(--b-09);
+  color: var(--m-01);
   font-family: 'poppins';
 }
 
@@ -28,7 +28,11 @@
   justify-content: space-between;
   font-size: 1.2rem;
   font-family: Roboto;
-  color: var(--b-07);
+  color: #FFF9F4;
+}
+
+.ementa li span {
+  color: #FFAF16;
 }
 
 

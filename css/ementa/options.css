@@ -5,7 +5,7 @@
 .options {
   display: flex;
   flex-wrap: wrap;
-  background: var(--m-01);
+  background: var(--b-04);
   padding: 10px;
   border-radius: 5px;
   gap: 90px;
@@ -30,38 +30,41 @@
 }
 
 .options li {
-  background: var(--b-05);
-  display: grid;
+  /* display: grid;
+  justify-content: center;
   text-align: center;
-  padding: 5px 25px;
+  background: var(--b-04);
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 1px 2px 1px #502E1633;
+  padding: 20px;
   border-radius: 3px;
   font-family: "Josefin sans";
   font-weight: bold;
-  cursor: pointer;
-}
+  cursor: pointer; */
 
-.options li:first-child .options-image {
-  /* margin-top: 10px; */
+  background: var(--b-04);
+  box-shadow: 0 1px 2px 1px #502E1633;
+  padding: 10px 30px;
+  text-align: center;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 3px;
 }
 
 .options li img {
-  width: auto;
-}
-
-.options li:first-child {
-  width: 135px;
+  margin-bottom: 5px;
 }
 
 .options li:hover {
-  background: var(--b-08);
+  background: #502E16;
 }
 
 .options li.active {
-  background: var(--b-09);
-}
-
-.options li .options-image {
-  pointer-events: none;
+  background: #502E16;
+  box-shadow: 0 1px 10px 5px #502E1633;
+  color: var(--b-09);
 }
 
 .options li p {
@@ -94,9 +97,5 @@
     margin-right: -35px;
     gap: 10px;
     padding: 10px;
-  }
-
-  .options li {
-    min-width: 40%;
   }
 }
