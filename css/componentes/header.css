@@ -78,7 +78,7 @@
   }
 
   .header-content.active .menu {
-    height: calc(100vh - 110px);
+    height: calc(50vh - 110px);
     visibility: visible;
     overflow-y: auto;
   }

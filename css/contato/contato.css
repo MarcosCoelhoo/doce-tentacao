@@ -57,15 +57,15 @@
 }
 
 .contato-email::before {
-  background: url("/imgs/icones/email.svg") no-repeat;
+  background: url("imgs/icones/email.svg") no-repeat;
 }
 
 .contato-endereco::before {
-  background: url("/imgs/icones/mapa.svg") no-repeat;
+  background: url("imgs/icones/mapa.svg") no-repeat;
 }
 
 .contato-redes::before {
-  background: url("/imgs/icones/social.svg") no-repeat;
+  background: url("imgs/icones/social.svg") no-repeat;
 }
 
 .form {

@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   color: #FFF9F4;
 }
 
@@ -38,6 +38,50 @@
 
 .ementa li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+#ementa-dois .vinho .sandes-tipo,
+#ementa-tres .refri .sandes-tipo {
+  text-align: right;
+  color: var(--m-01);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0rem;
+  display: inline-block;
+}
+
+#ementa-dois .vinho h2,
+#ementa-tres .refri h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ementa-section {
+  display: none;
+}
+
+.ementa-section.active {
+  display: block;
+}
+
+.section-btn-proximo {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-proximo {
+  outline: none;
+  text-transform: uppercase;
+  padding: 5px;
+  background: var(--b-04);
+  color: var(--m-01);
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, .4);
+  cursor: pointer;
 }
 
 @keyframes slide {

@@ -41,6 +41,11 @@
   background: rgb(151, 150, 150);
 }
 
+.funcionarios li .funcionario-image img {
+  object-fit: cover;
+  width: 100%;
+}
+
 .funcionarios li .funcionario-cargo {
   margin-left: 20px;
   margin-top: 10px;
@@ -51,7 +56,7 @@
   margin-left: 20px;
   margin-top: -5px;
   font-size: 1.8rem;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   color: var(--b-03);
   font-weight: 500;
 }

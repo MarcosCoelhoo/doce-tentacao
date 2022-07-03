@@ -1,4 +1,4 @@
-/* .slide {
+.slide {
   position: relative;
   width: calc(100vw - 17px);
   height: 100vh;
@@ -76,9 +76,9 @@
   .slide-container li a {
     font-size: 1rem;
   }
-} */
+}
 
-.slide {
+/* .slide {
   display: grid;
   justify-content: center;
 }
@@ -107,4 +107,4 @@
   .texto-cafe {
     font-size: 1.3rem;
   }
-}
+} */

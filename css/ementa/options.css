@@ -18,6 +18,8 @@
   font-family: "Poppins";
   font-size: 2rem;
   margin-bottom: 20px;
+  margin-left: 100px;
+  padding: 20px;
 }
 
 .options-title::before {

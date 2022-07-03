@@ -1,22 +1,23 @@
 /* global */
-@import '/css/global/global.css';
-@import '/css/global/cores.css';
+@import "/css/global/global.css";
+@import "/css/global/cores.css";
 
 /* componentes */
-@import '/css/componentes/header.css';
-@import '/css/componentes/footer.css';
-@import '/css/componentes/slide-cafe.css';
+@import "/css/componentes/header.css";
+@import "/css/componentes/footer.css";
+@import "/css/componentes/slide-cafe.css";
 
 /* home */
-@import '/css/home/slide.css';
+@import "/css/home/slide.css";
+@import "/css/home/feedback.css";
 
 /* ementa */
-@import '/css/ementa/options.css';
-@import '/css/ementa/ementa.css';
+@import "/css/ementa/options.css";
+@import "/css/ementa/ementa.css";
 
 /* conheca-nos */
-@import '/css/conheca-nos/equipe.css';
-@import '/css/conheca-nos/endereco.css';
+@import "/css/conheca-nos/equipe.css";
+@import "/css/conheca-nos/endereco.css";
 
 /* contato */
-@import '/css/contato/contato.css';
+@import "/css/contato/contato.css";

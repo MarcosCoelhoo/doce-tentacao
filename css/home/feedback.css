@@ -1,0 +1,64 @@
+.feedback-bg {
+  padding: 20px;
+}
+
+.feedback {
+  background: var(--b-04);
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.feedback-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  margin: 20px;
+  text-align: center;
+  color: var(--m-01);
+}
+
+.feedback-comentarios {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.feedback-comentarios li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  background: #522900;
+  padding: 20px;
+  width: 100%;
+}
+
+.feedback-comentarios li h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--b-05);
+}
+
+.feedback-comentarios li p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  width: 80ch;
+  color: var(--b-09);
+}
+
+.feedback-comentarios li img {
+  border-radius: 50%;
+  width: 54px;
+}
+
+@media (max-width:700px) {
+  .feedback-comentarios li p {
+    width: 40ch;
+  }
+}
+
+@media (max-width:500px) {
+  .feedback-comentarios li p {
+    width: 20ch;
+  }
+}
