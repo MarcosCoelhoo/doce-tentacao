@@ -13,10 +13,19 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.min.css">
+
+  <script src='css/system.js'></script>
   <title>Document</title>
 </head>
 
-<body>
+<body OnLoad="Carregando()" ng-app="myApp" ng-controller="myCtrl">
+
+  <div id="smscarregando">
+    <script>
+      document.write('<img src="imgs/icones/loading.gif">');
+    </script>
+  </div>
+
   <header class="header-bg">
     <section class="header-container">
       <a href="index.html" class="header-image">
